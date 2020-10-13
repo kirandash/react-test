@@ -51,3 +51,9 @@
 ## 5. Render the Gift List in the App - with Unit test
 1. `expect(app.state().gifts).toEqual([]);`
 2. Also add test case for adding new state data for gift.
+
+## 6. Render Gift Giver and the Gift List
+1. Hook App.js to index.js
+    - No need to write test for this. Since this is default behavior already implemented by create-react-app and tested well.
+2. Note: Test pollution: 
+    * Is when one of the test fn is affecting other test fns results. Ideally all test fns or cases should be isolated and should not affect each other.
