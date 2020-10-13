@@ -5,5 +5,8 @@ exports[`renders correctly 1`] = `
   <h2>
     Gift Giver
   </h2>
+  <Button className=\\"btn-add\\" onClick={[Function (anonymous)]} variant=\\"primary\\" active={false} disabled={false}>
+    Add Gift
+  </Button>
 </div>"
 `;

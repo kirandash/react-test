@@ -47,3 +47,7 @@
 2. run test: 
     - will create __snapshotes__ folder and App.test.js.snap file which will have a snapshot of App component under shallowWrapper
     * Note: On changing app component content: the test will fail saying there is no snapshot match. To update the snapshot in __snapshots__ folder **press "u"** and this will pass the test
+
+## 5. Render the Gift List in the App - with Unit test
+1. `expect(app.state().gifts).toEqual([]);`
+2. Also add test case for adding new state data for gift.
