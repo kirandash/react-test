@@ -69,3 +69,6 @@
 1. Common practice to **group tests together**.
 2. Put all unit tests for app component under one `describe` block.
     * Note: this will make the snapshot obsolte because of change in test structure. press u to update the snapshot. press a to rerun all the tests.
+
+## 9. Test and Build the Gift Component
+1. Write snapshot test for Gift in Gift.test.js
