@@ -24,8 +24,10 @@
     * Jest + Enzyme = TDD with React
 
 ## 3. Set up Enzyme, Run Jest runner and Write first unit test
-1. `npm install enzyme --save-dev` Note: jest-cli comes by default with jest. No need to install separately.
+* **setup**: https://enzymejs.github.io/enzyme/docs/installation/index.html
+1. `npm i --save-dev enzyme enzyme-adapter-react-16` Note: jest-cli comes by default with jest. No need to install separately.
     * `npm install jest-cli --save-dev`: redundant
+    * Add enzyme setup in setupTests.js file.
 2. `npm i react-bootstrap`
 3. To run test: `npm run test`
 4. If any conflicts in dependencies: 
@@ -37,3 +39,11 @@
 8. **Shallow** from enzyme:
     - helps in creating a shallow DOM in test file. If our test file has child components, it will only load JSX of the child component and won't go any deeper than that.
 9. `npm install react-dom react-test-renderer --save-dev`: redundant
+
+## 4. Snapshot Test the App Component
+1. `toMatchSnapshot`:
+    * is an essential method of Jest testing method called snapshot which keeps a record of our React component.
+    * it tells if the new rendered version of the component has changed and is different from the prev one.
+2. run test: 
+    - will create __snapshotes__ folder and App.test.js.snap file which will have a snapshot of App component under shallowWrapper
+    * Note: On changing app component content: the test will fail saying there is no snapshot match. To update the snapshot in __snapshots__ folder **press "u"** and this will pass the test
