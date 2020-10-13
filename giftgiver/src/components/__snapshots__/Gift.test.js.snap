@@ -2,17 +2,22 @@
 
 exports[`Gift renders properly 1`] = `
 "<div>
-  <FormGroup>
-    <FormLabel column={false} srOnly={false}>
-      Person
-    </FormLabel>
-    <FormControl className=\\"input-person\\" onChange={[Function: onChange]} />
-  </FormGroup>
-  <FormGroup>
-    <FormLabel column={false} srOnly={false}>
-      Present
-    </FormLabel>
-    <FormControl className=\\"input-present\\" onChange={[Function: onChange]} />
-  </FormGroup>
+  <Form inline={false}>
+    <FormGroup>
+      <FormLabel column={false} srOnly={false}>
+        Person
+      </FormLabel>
+      <FormControl className=\\"input-person\\" onChange={[Function: onChange]} />
+    </FormGroup>
+    <FormGroup>
+      <FormLabel column={false} srOnly={false}>
+        Present
+      </FormLabel>
+      <FormControl className=\\"input-present\\" onChange={[Function: onChange]} />
+    </FormGroup>
+  </Form>
+  <Button className=\\"btn-remove\\" onClick={[Function: onClick]} variant=\\"primary\\" active={false} disabled={false}>
+    Remove Gift
+  </Button>
 </div>"
 `;

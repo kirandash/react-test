@@ -10,20 +10,28 @@ class Gift extends Component {
     render() {
         return (
             <div>
-                <FormGroup>
-                    <Form.Label>Person</Form.Label>
-                    <FormControl
-                        className='input-person'
-                        onChange={event => this.setState({ person: event.target.value })}
-                    />
-                </FormGroup>
-                <FormGroup>
-                    <Form.Label>Present</Form.Label>
-                    <FormControl
-                        className='input-present'
-                        onChange={event => this.setState({ present: event.target.value })}
-                    />
-                </FormGroup>
+                <Form>
+                    <FormGroup>
+                        <Form.Label>Person</Form.Label>
+                        <FormControl
+                            className='input-person'
+                            onChange={event => this.setState({ person: event.target.value })}
+                        />
+                    </FormGroup>
+                    <FormGroup>
+                        <Form.Label>Present</Form.Label>
+                        <FormControl
+                            className='input-present'
+                            onChange={event => this.setState({ present: event.target.value })}
+                        />
+                    </FormGroup>
+                </Form>
+                <Button 
+                    className="btn-remove"
+                    onClick={() => this.props.removeGift(this.props.gift.id)}
+                >
+                    Remove Gift
+                </Button>
             </div>
         )
     }
