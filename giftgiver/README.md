@@ -57,3 +57,15 @@
     - No need to write test for this. Since this is default behavior already implemented by create-react-app and tested well.
 2. Note: Test pollution: 
     * Is when one of the test fn is affecting other test fns results. Ideally all test fns or cases should be isolated and should not affect each other.
+
+## 7. Behavior Driven Development
+1. BDD:
+    * A variation of TDD that tests for user scenarios.
+    * Can define scenarios with: Given, when, then...
+    * Ex: Given notes, when deleting, then remove a note.
+    * Best consists of **scenarios/specifications**.
+
+## 8. BDD in GiftGiver
+1. Common practice to **group tests together**.
+2. Put all unit tests for app component under one `describe` block.
+    * Note: this will make the snapshot obsolte because of change in test structure. press u to update the snapshot. press a to rerun all the tests.
