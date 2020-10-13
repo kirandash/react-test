@@ -8,5 +8,11 @@ exports[`Gift renders properly 1`] = `
     </FormLabel>
     <FormControl className=\\"input-person\\" onChange={[Function: onChange]} />
   </FormGroup>
+  <FormGroup>
+    <FormLabel column={false} srOnly={false}>
+      Present
+    </FormLabel>
+    <FormControl className=\\"input-present\\" onChange={[Function: onChange]} />
+  </FormGroup>
 </div>"
 `;

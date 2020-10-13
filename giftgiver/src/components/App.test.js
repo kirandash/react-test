@@ -38,5 +38,9 @@ describe('App', () => {
             expect(app.find('.gift-list').children().length).toEqual(1);
             // expect(app.find('.gift-list').children().length).toEqual(2); // bcoz of test pollution from click event in prev test case
         });
+
+        it('creates a gift component', () => {
+            expect(app.find('Gift').exists()).toBe(true);
+        });
     });
 })

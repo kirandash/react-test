@@ -72,3 +72,4 @@
 
 ## 9. Test and Build the Gift Component
 1. Write snapshot test for Gift in Gift.test.js
+2. Test if Gift is present as a child component in App.js using: `xpect(app.find('Gift').exists()).toBe(true);`
