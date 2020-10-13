@@ -75,3 +75,18 @@
 2. Test if Gift is present as a child component in App.js using: `xpect(app.find('Gift').exists()).toBe(true);`
 
 ## 10. Remove a Gift
+
+## 11. Test Coverage and Helper Methods
+1. Test coverage reporting:
+    - To check how well our test has covered our code
+    - Most testing fw also comes with coverage tools
+    - Jest also has coverage tool
+    - It will go through code and generate hit points and reports if our test has covered all the hit points
+2. `npm run test -- --coverage`
+    * Bug Fix: `npm run test -- --coverage --watchAll=false` to get all the reports
+3. Make sure nothing is left uncovered in the uncovered Line.
+4. Ignore index.js in jest config.
+    - No need to test this code from 3rd party create-react-app. already tested by them.
+5. Also try to cover all Branching possiblities.
+    - ex: ternary operator in App.js
+6. After fixing issues: make sure 100% on all files and branches and lines.

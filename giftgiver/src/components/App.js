@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import Gift from './Gift';
+import { max_number } from '../helper'
 
 class App extends React.Component {
     constructor() {
@@ -11,9 +12,11 @@ class App extends React.Component {
     addGift = () => {
         // local copy of state variable
         const { gifts } = this.state;
-        const ids = this.state.gifts.map(gift => gift.id);
-        const max_id = ids.length > 0 ? Math.max(...ids) : 0;
-        gifts.push({ id: max_id + 1 })
+        // const ids = this.state.gifts.map(gift => gift.id);
+        // const max_id = max_number(ids);
+        // possible branching needs to be tested as well - thus: create separate utility fn
+        // const max_id = ids.length > 0 ? Math.max(...ids) : 0;
+        gifts.push({ id: max_number(this.state.gifts.map(gift => gift.id)) + 1 })
         this.setState({ gifts });
     }
 
