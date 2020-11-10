@@ -22,3 +22,11 @@
     2. run test: 
         - will create __snapshotes__ folder and App.test.js.snap file which will have a snapshot of App component under shallowWrapper
         * Note: On changing app component content: the test will fail saying there is no snapshot match. To update the snapshot in __snapshots__ folder **press "u"** and this will pass the test
+
+## 3. Redux
+1. The **store** is one data object for the app.
+2. **Reducers** update the store.
+3. **Actions** activates reducers.
+
+## 4. Test Action to set the balance
+1. Test returned object of action creator fn.
