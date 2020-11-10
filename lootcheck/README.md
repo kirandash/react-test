@@ -39,3 +39,7 @@
 2. Create Wallet component. 
     * Snapshot test
     * Data viewing test
+
+## 7. Render Wallet - Test render of connected Wallet component in App
+1. Add test to check if Wallet component is present in App component.
+2. Note: Must check for connected component for rendering. Since Wallet is connected to store here.

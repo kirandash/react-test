@@ -13,5 +13,17 @@ describe('App', () => {
 
   it('renders properly', () => {
     expect(app.debug()).toMatchSnapshot()
-  })
+  });
+
+  it('contains a connected Wallet component', () => {
+    // Can log using .debug() to check the content of app
+    // console.log(app.debug());
+
+    // Checking If unconnected wallet component exists
+    // expect(app.find('Wallet').exists()).toBe(true);
+
+    // Checking if connected wallet component exists
+    expect(app.find('Connect(Wallet)').exists()).toBe(true);
+  });
+
 });

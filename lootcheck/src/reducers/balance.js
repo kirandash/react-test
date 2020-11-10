@@ -6,7 +6,7 @@ const balance = (state = 0, action) => { // default value is 0
         case constants.SET_BALANCE:
             return action.balance;
         default:
-            return balance;
+            return state;
     }
 }
 
