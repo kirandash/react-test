@@ -47,3 +47,8 @@
 ## 8. Redux Deposit and Withdraw methods
 1. Add test for deposit and withdraw actions in src/actions/balance.test.js and reducers in src/reducers/balance.test.js
 2. Add code to pass the tests
+
+## 9. Local Wallet Balance with State - Test input change event and state data
+1. Test if input to withdraw or deposit exists or not on wallet component.
+2. Check if on typing amount in input changes the data in state.
+3. Add code in Wallet.js to pass the test
