@@ -43,3 +43,7 @@
 ## 7. Render Wallet - Test render of connected Wallet component in App
 1. Add test to check if Wallet component is present in App component.
 2. Note: Must check for connected component for rendering. Since Wallet is connected to store here.
+
+## 8. Redux Deposit and Withdraw methods
+1. Add test for deposit and withdraw actions in src/actions/balance.test.js and reducers in src/reducers/balance.test.js
+2. Add code to pass the tests
