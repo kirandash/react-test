@@ -30,3 +30,6 @@
 
 ## 4. Test Action to set the balance
 1. Test returned object of action creator fn.
+
+## 5. Test Reducer - For setting balance
+1. Test returned value of reducer fn. Must return the balance value which is being set.
