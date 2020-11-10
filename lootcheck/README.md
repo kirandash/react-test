@@ -33,3 +33,9 @@
 
 ## 5. Test Reducer - For setting balance
 1. Test returned value of reducer fn. Must return the balance value which is being set.
+
+## 6. Add store to App and Test Snapshot Wallet component
+1. Create store in index.js and prvoide it to App using Provider.
+2. Create Wallet component. 
+    * Snapshot test
+    * Data viewing test
