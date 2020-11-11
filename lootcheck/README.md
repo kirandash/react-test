@@ -52,3 +52,9 @@
 1. Test if input to withdraw or deposit exists or not on wallet component.
 2. Check if on typing amount in input changes the data in state.
 3. Add code in Wallet.js to pass the test
+
+## 10. Dispatch Deposit and withdraw - Test with jest.fn
+1. Link action creators to Wallet component via connect fn. Thus the ac will be available to Wallet via prop.
+2. Test Dispatch methods using `jest.fn()`
+3. Check if on click method is being dispatched using `toHaveBeenCalledWith`
+4. Note: Only need to check if dispatch is being called or not. Value change is being already tested in reducer.

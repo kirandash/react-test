@@ -5,7 +5,9 @@ import { shallow } from 'enzyme';
 import { Wallet } from './Wallet'
 
 describe('Wallet', () => {
-  const props = { balance: 20 };
+  const mockDeposit = jest.fn();
+  const mockWithdraw = jest.fn();
+  const props = { balance: 20, deposit: mockDeposit, withdraw: mockWithdraw }; // action creator will be available to prop
   const wallet = shallow(<Wallet {...props} />);
 
   it('renders properly', () => {
@@ -33,5 +35,24 @@ describe('Wallet', () => {
         expect(wallet.state().balance).toEqual(parseInt(userBalance, 10));
     });
 
+    // Deposit Scenario
+    describe('and the user wants to make a deposit', () => {
+      // Simulate Click event before each test case
+      beforeEach(() => wallet.find('.btn-deposit').simulate('click'));
+
+      it('dispatches the `deposit()` it receives from props with local balance', () => {
+        expect(mockDeposit).toHaveBeenCalledWith(parseInt(userBalance, 10));
+      });
+    });
+
+    // Withdraw Scenario
+    describe('and the user wants to make a withdrawal', () => {
+      // Simulate Click event before each test case
+      beforeEach(() => wallet.find('.btn-withdraw').simulate('click'));
+
+      it('dispatches the `withdraw()` it receives from props with local balance', () => {
+        expect(mockWithdraw).toHaveBeenCalledWith(parseInt(userBalance, 10));
+      });
+    });
   });
 });

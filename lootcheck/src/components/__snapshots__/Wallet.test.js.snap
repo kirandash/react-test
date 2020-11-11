@@ -8,5 +8,11 @@ exports[`Wallet renders properly 1`] = `
   </h3>
   <br />
   <input className=\\"input-wallet\\" onChange={[Function (anonymous)]} />
+  <button className=\\"btn-deposit\\" onClick={[Function (anonymous)]}>
+    Deposit
+  </button>
+  <button className=\\"btn-withdraw\\" onClick={[Function (anonymous)]}>
+    Withdraw
+  </button>
 </div>"
 `;
