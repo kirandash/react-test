@@ -63,3 +63,23 @@
 1. Test by adding a second reducer and then check if the data in second reducer matches the modification done by first reducer.
 2. Add the functionality using sfcookies: read_cookie, bake_cookie
 3. Note: Since jest provides a mock window object while testing. Cookies will be saved in the mock environment and can be tested.
+
+## 12. Async Actions, Middleware and Redux Thunk
+1. **Async actions**:
+    * Actions in redux that allow for asynchronous behavior.
+    * An API request shouldn't block the application.
+    * The API request should happen in the background.
+2. How do async actions work?
+    * Use **middleware** - allows us to return a promise. and not just an object
+    * Adds a layer b/w the async code and the store
+    * **Redux-thunk**
+
+## 13. Accessing the Bitcoin API
+1. coindesk api:
+    * https://www.coindesk.com/coindesk-api
+2. `npm i redux-thunk`
+3. For testing redux-thunk: `npm i redux-mock-store fetch-mock --save-dev`
+4. fetch-mock has dependency on node-fetch. `npm install node-fetch`
+
+## 14. Fetch Bitcoin value through Redux
+1. While testing - only check if API is being fetched or not and check for one property. No need to check whole JSON content.
