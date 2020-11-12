@@ -1,13 +1,23 @@
 import balanceReducer from './balance';
+// Second instance of reducer to check data in cookie
+import balanceReducer2 from './balance';
 import * as constants from '../actions/constants';
 
 describe('balanceReducer', () => {
-    it('sets a balance', () => {
+    describe('when initializing', () => {
         const balance = 10;
 
-        // Test returned value of reducer fn. Must return the balance value which is being set.
-        expect(balanceReducer(undefined, { type: constants.SET_BALANCE, balance }))
-            .toEqual(balance);
+        it('sets a balance', () => {
+            // Test returned value of reducer fn. Must return the balance value which is being set.
+            expect(balanceReducer(undefined, { type: constants.SET_BALANCE, balance }))
+                .toEqual(balance);
+        });
+    
+        describe('then re-initializing', () => {
+            it('reads the balance from the cookies', () => {
+                expect(balanceReducer2(undefined, {})).toEqual(balance);
+            });
+        });
     });
 
     it('deposits into the balance', () => {

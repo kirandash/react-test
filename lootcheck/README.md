@@ -58,3 +58,8 @@
 2. Test Dispatch methods using `jest.fn()`
 3. Check if on click method is being dispatched using `toHaveBeenCalledWith`
 4. Note: Only need to check if dispatch is being called or not. Value change is being already tested in reducer.
+
+## 11. Store Data with Cookies
+1. Test by adding a second reducer and then check if the data in second reducer matches the modification done by first reducer.
+2. Add the functionality using sfcookies: read_cookie, bake_cookie
+3. Note: Since jest provides a mock window object while testing. Cookies will be saved in the mock environment and can be tested.
