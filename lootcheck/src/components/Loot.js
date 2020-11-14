@@ -4,8 +4,11 @@ import { fetchBitcoin } from '../actions/bitcoin';
 
 export class Loot extends Component {
     componentDidMount() {
-        if(this.props.fetchBitcoin)
-        this.props.fetchBitcoin();
+        if(this.props.fetchBitcoin){
+            this.props.fetchBitcoin();
+        }else {
+            // Do nothing
+        }
     }
 
     computeBitcoin() {

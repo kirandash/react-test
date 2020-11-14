@@ -102,3 +102,9 @@
 ## 18. Test and Build the Loot component - display
 1. Test if converted bitcoin rate is being displayed properly.
 2. Add loot component to App component.
+
+## 19. Run the coverage report
+1. `npm run test -- --coverage`
+    * Bug Fix: `npm run test -- --coverage --watchAll=false` to get all the reports
+2. can ignore index.js test reports since it is mostly settings based.
+3. Ignore index.js and reportWebVitals.js in package.json file.
