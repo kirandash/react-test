@@ -6,12 +6,14 @@ import { FETCH_BITCOIN } from './constants';
 import { fetchBitcoin } from './bitcoin';
 
 // configureMockStore allows us to provide middlewares
-const createMockStore = configureMockStore([thunk]);
+const createMockStore = configureMockStore([thunk]); // configureMockStore returns a fn that allows us to create a mock store
+// create a mock store
 const store = createMockStore({ bitcoin: {} });
 
 // Mock response matching JSON structure of real API
 const mockResponse = { body: { bpi: 'bitcoin price index' } };
 
+// fetch api call which returns mockResponse
 fetchMock.get(
     'https://api.coindesk.com/v1/bpi/currentprice.json',
     mockResponse

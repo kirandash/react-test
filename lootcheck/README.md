@@ -81,5 +81,9 @@
 3. For testing redux-thunk: `npm i redux-mock-store fetch-mock --save-dev`
 4. fetch-mock has dependency on node-fetch. `npm install node-fetch`
 
-## 14. Fetch Bitcoin value through Redux
+## 14. Fetch Bitcoin value through Redux - Redux Action
 1. While testing - only check if API is being fetched or not and check for one property. No need to check whole JSON content.
+2. Middleware returns a promise which in the end dispatches an action. For testing: We can create a mock store and then compare if the output of middleware matches the mock store or not.
+
+## 15. Bitcoin Redux Reducer
+1. Make a reducer for the bitcoin API redux call. (bitcoin.test.js)
