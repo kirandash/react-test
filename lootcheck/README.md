@@ -108,3 +108,6 @@
     * Bug Fix: `npm run test -- --coverage --watchAll=false` to get all the reports
 2. can ignore index.js test reports since it is mostly settings based.
 3. Ignore index.js and reportWebVitals.js in package.json file.
+
+## 20. API clean up - add credit
+1. Add test to make sure credit to coinbase API is added to project.
