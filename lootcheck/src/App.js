@@ -1,5 +1,6 @@
 import './App.css';
 import Wallet from './components/Wallet';
+import Loot from './components/Loot';
 
 function App() {
   return (
@@ -7,6 +8,8 @@ function App() {
       <h2>Loot Check</h2>
       <hr/>
       <Wallet/>
+      <hr/>
+      <Loot />
     </div>
   );
 }

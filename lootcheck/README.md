@@ -98,3 +98,7 @@
 1. snapshot test
 2. check calling api on mount
 3. mount component testing: Fix later: mount issue: https://github.com/enzymejs/enzyme/issues/2462
+
+## 18. Test and Build the Loot component - display
+1. Test if converted bitcoin rate is being displayed properly.
+2. Add loot component to App component.
