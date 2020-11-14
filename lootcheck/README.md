@@ -93,3 +93,8 @@
 2. reducers/index.js - will have combination of all reducers and then output it.
 3. expect default root reducer to match initial state of 0 balance and empty bitcoin object
 4. Note: While using connect for mapping redux to component: do not use the entire state but rather use individual property viz: state.balance.
+
+## 17. Test and Build the Loot component
+1. snapshot test
+2. check calling api on mount
+3. mount component testing: Fix later: mount issue: https://github.com/enzymejs/enzyme/issues/2462
