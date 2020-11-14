@@ -33,5 +33,5 @@ export class Wallet extends Component {
 }
 
 // Exporting connected component for use by other components
-export default connect(state => {return { balance: state }}, { deposit, withdraw })(Wallet)
+export default connect(state => {return { balance: state.balance }}, { deposit, withdraw })(Wallet)
 // Note: Can not return an object implicitly. we must use return explicitly

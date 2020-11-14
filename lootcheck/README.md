@@ -87,3 +87,9 @@
 
 ## 15. Bitcoin Redux Reducer
 1. Make a reducer for the bitcoin API redux call. (bitcoin.test.js)
+
+## 16. Combine Reducers
+1. Redux allows us to combine two or more reducers.
+2. reducers/index.js - will have combination of all reducers and then output it.
+3. expect default root reducer to match initial state of 0 balance and empty bitcoin object
+4. Note: While using connect for mapping redux to component: do not use the entire state but rather use individual property viz: state.balance.
