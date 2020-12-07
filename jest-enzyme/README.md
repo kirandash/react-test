@@ -33,3 +33,9 @@
     * jest-enzyme: for communication b/w jest and enzyme (redundant)
     * enzyme-adapter-react-16: tells enzyme what kind of code to expect for testing. i.e react 16
 5. Configure enzyme in App.test.js
+
+### 4. Using Enzyme in a test
+1. https://enzymejs.github.io/enzyme/docs/api/shallow.html
+2. `debug()`: returns the DOM as a string
+3. **expect**: with mocha we use chai as the assertion library. Jest has it's built in assertions like `expect` api
+    * https://jestjs.io/docs/en/expect
