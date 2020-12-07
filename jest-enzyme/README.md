@@ -15,7 +15,7 @@
     * `test` is mentioned in the official doc
     * can use `throw Error()` to fail a test and stop execution
 
-### 3. Enzyme Intro
+### 3. Enzyme Intro and Setup
 1. Creates virtual DOM for testing
 2. Allows testing without a browser
 3. Enzyme has better toolkit
@@ -30,5 +30,6 @@
     * Access to prop and state
 4. Install: `npm i --save-dev enzyme jest-enzyme enzyme-adapter-react-16`
     * enzyme
-    * jest-enzyme: for communication b/w jest and enzyme
+    * jest-enzyme: for communication b/w jest and enzyme (redundant)
     * enzyme-adapter-react-16: tells enzyme what kind of code to expect for testing. i.e react 16
+5. Configure enzyme in App.test.js
