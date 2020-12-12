@@ -32,3 +32,9 @@
     * to investigate what state actually is
 
 ### 8. Test Button Click
+
+### 9. Summary
+1. shallow(), find(), setState(), state(), simulate()
+2. setup(), findByTestAttr()
+
+### 10. Decrement and other Improvements
