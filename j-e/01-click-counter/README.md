@@ -24,3 +24,9 @@
 
 ### 6. DRY Factor
 1. While trying to increase code reusability make sure that code doesn't take too much time to investigate. But is easily reusable.
+
+### 7. Test initial state
+1. [setState](https://enzymejs.github.io/enzyme/docs/api/ShallowWrapper/setState.html)
+    * to state
+2. [state](https://enzymejs.github.io/enzyme/docs/api/ShallowWrapper/state.html)
+    * to investigate what state actually is
