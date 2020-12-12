@@ -21,3 +21,6 @@
 6. Now data attributes will be removed in prod build but not in dev
 
 ### 5. More data-test attribute tests
+
+### 6. DRY Factor
+1. While trying to increase code reusability make sure that code doesn't take too much time to investigate. But is easily reusable.
