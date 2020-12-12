@@ -30,3 +30,5 @@
     * to state
 2. [state](https://enzymejs.github.io/enzyme/docs/api/ShallowWrapper/state.html)
     * to investigate what state actually is
+
+### 8. Test Button Click
