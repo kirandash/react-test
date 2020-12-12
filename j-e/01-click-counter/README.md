@@ -19,3 +19,5 @@
 5. To run build file on server: `yarn global add serve`
     * `serve -s build`
 6. Now data attributes will be removed in prod build but not in dev
+
+### 5. More data-test attribute tests
