@@ -23,3 +23,8 @@
 5. **Caution**: 
     * Too many abstractions - hard to read tests
     * Less useful in diagnosing failing tests
+
+## 6. GuessedWords Component
+1. **describe**: to define context or grouping tests
+2. **beforeEach**: to run code before each tests in describe block
+3. Add **helper fn** for getLetterMatchCount in helpers/index.js and test
