@@ -7,4 +7,5 @@
 4. **j-e**: Projects for jest-enzyme course
     * 01_ Click Counter: React app with state
     * 02_Jotto: React redux app - TDD
+    * [Resources](https://github.com/bonnie/udemy-react-testing-projects)
    
